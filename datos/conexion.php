@@ -6,11 +6,11 @@ class conexion{
 	}
 }
 
-$cnn = new conexion();
+/*$cnn = new conexion();
 if($cnn->conectar()){
 	echo "Conectado";
 }else {
 	echo "No conectado";
-}
+}*/
 
 ?>
