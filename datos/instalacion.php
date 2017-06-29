@@ -20,12 +20,12 @@ function crearDb(){
 function crearTablas(){
 	$cnn = new conexion();
 	$cnn = $cnn->conectar();
-	mysqli_select_db($cnn, "loginBoostrap");
+	mysqli_select_db($cnn, "loginBootstrap");
 
 	$sql = "CREATE TABLE usuarios(
 		id INT(11) NOT NULL AUTO_INCREMENT,
 		usuario CHAR(50), 
-		CONTRASENA char(50),
+		contrasena char(50),
 		PRIMARY KEY(id)
 	)";
 	if(mysqli_query($cnn, $sql)){
@@ -34,6 +34,9 @@ function crearTablas(){
 	mysqli_close($cnn);
 }
 
-crearTablas();
+/*crearDb();
+crearTablas();*/
+
+
 
 ?>
