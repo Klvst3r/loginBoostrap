@@ -14,8 +14,11 @@ http://getbootstrap.com/getting-started/
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sign In</title>
 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
@@ -31,10 +34,10 @@ http://getbootstrap.com/getting-started/
 	 <div class="container">
 
       <div class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="email" id="usuario" class="form-control" placeholder="Email address" required autofocus>
+        <h2 class="form-signin-heading">Login</h2>
+        <input type="email" id="usuario" class="form-control" placeholder="Usuario" required autofocus>
         <input type="password" id="pass" class="form-control" placeholder="Password" required>
-        <button class="btn btn-lg btn-primary btn-block" type="button">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" id="signin" type="button">Ingresar</button>
       </div>
     </div>
 	
