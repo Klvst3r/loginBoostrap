@@ -39,9 +39,11 @@ function validar(){
 		success:function(result){
 			//dalert(result); 
 			if(result == "true"){
-				$("#resultado").html("<div style='background:green'>Acceso Correcto</div>");
+				//$("#resultado").html("<div style='background:green'>Acceso Correcto</div>");
+				//Modificar la referencia del documento
+				document.location.href="admin.php";
 			}else {
-				$("#resultado").html("<div style='background:red'>No se pudo comprovar el usuario</div>");
+				$("#resultado").html('<div class="alert alert-danger" role="alert">Acceso Denegado, <br/> No se pudo comprobar el usuario</div>');
 			}
 		}, 
 		data:{

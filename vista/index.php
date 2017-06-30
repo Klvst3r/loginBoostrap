@@ -6,6 +6,8 @@ http://getbootstrap.com/
 
 http://getbootstrap.com/getting-started/
 
+Componentes y alertas de Boostrap
+http://getbootstrap.com/components/#alerts
 
  */
 

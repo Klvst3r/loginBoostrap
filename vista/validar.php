@@ -9,6 +9,11 @@ if(isset($_POST["usuario"]) || isset($_POST["pass"])){
 		$usuariosCon = new usuariosControlador();
 		//Validación de si existen los parametros enviados del formulario
 		if($usuariosCon->validar($_POST["usuario"],$_POST["pass"])){
+			//Iniciar sesion
+			session_start();
+			$_SESSION["usuario"] = $_POST["usuario"];
+			$_SESSION["pass"] = $_POST["pass"];
+
 			echo "true"; //Usuario recuperado de la BD
 
 			/*echo $_POST["usuario"]."<b r/>";
