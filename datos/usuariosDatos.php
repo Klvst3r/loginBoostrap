@@ -28,10 +28,11 @@ class usuariosDatos{
 	}
 }
 
-$obj = new usuariosDatos();
+/*$obj = new usuariosDatos();
 if($obj->insertarUsuarios("uno","pass")){
 	echo "Todo va bien";
-}
+}*/
+
 
 
 ?>

@@ -3,19 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insertar</title>
+	<!-- https://developers.google.com/speed/libraries/#jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+
 </head>
 <body>
-	<form action="insertar.php" method="post">
-		<fieldset>
-			<legend>Insertar Usuarios</legend>
+	<div> 
+	<!-- <form action="insertar.php" method="post"> -->
+		<h1>Insertar Usuarios</h1>
 		<label>Usuario:</label>
-		<input type="text" name="usuario"/>
+		<input type="text" id="usuario"/>
 		<br />
 		<label>Password:</label>
-		<input type="password" name="pass"/>
-		<br/>
-		<input type="submit" />
-		</fieldset>
-	</form>
+		<input type="password" id="pass"/>
+		<br/>de In
+		<input type="button" value="registrar"id="btnregistrar" />
+	<!-- </form> -->
+	</div>	
 </body>
 </html>
