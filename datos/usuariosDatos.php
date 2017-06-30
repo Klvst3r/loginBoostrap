@@ -51,8 +51,16 @@ if($obj->insertarUsuarios("uno","pass")){
 		
 		$fila = mysqli_fetch_array($consulta);
 
-		if($fila > 0){
+		// se comrpueba solo que la fila no sea cero pero no que el usuario verdaderamente exista en la BD
+	/*	if($fila > 0){
 			return true;
+		}else {
+			return false;
+		}*/
+		if($fila > 0){
+			if($fila["usuario"] == $usuarios->usuario && $fila["contrasena"] == $usuarios->contrasena){
+				return true;
+			}
 		}else {
 			return false;
 		}

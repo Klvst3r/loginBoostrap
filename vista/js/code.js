@@ -32,7 +32,7 @@ function validar(){
 	var usuario = $("#usuario").val();
 	var pass = $("#pass").val();
 
-	console.log(usuario);
+	//console.log(usuario);
 
 	$.ajax({
 		url:"validar.php",
