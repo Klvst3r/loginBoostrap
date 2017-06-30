@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Insertar</title>
 	<!-- https://developers.google.com/speed/libraries/#jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 	<script type="text/javascript" src="js/code.js"></script>
 
 </head>
@@ -17,7 +18,7 @@
 		<br />
 		<label>Password:</label>
 		<input type="password" id="pass"/>
-		<br/>de In
+		<br/>
 		<input type="button" value="registrar"id="btnregistrar" />
 	<!-- </form> -->
 	</div>	

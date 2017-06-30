@@ -1,10 +1,10 @@
 <?php
 include "../datos/usuariosDatos.php";
 
-class usuariosControlador {
+class usuariosControlador{
 	function insertarUsuarios($usuario, $pass){
-		$obt =  new usuariosDatos();
-		return $obj->insertarUsuarios($usuarios, $pass);
+		$obj =  new usuariosDatos();
+		return $obj->insertarUsuarios($usuario, $pass);
 	}
 }
 
