@@ -12,7 +12,12 @@ function enviarDatos(){
 	$.ajax({
 		url:"insertar.php",
 		success:function(result){
-			alert(result); 
+			//dalert(result); 
+			if(result == "true"){
+				$("#resultado").html("Se ha registrado el usuario correctamente");
+			}else {
+				$("#resultado").html("No se ha registrado el usuario");
+			}
 		}, 
 		data:{
 			usuario:usuario,
