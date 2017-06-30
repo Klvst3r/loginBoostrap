@@ -33,6 +33,31 @@ if($obj->insertarUsuarios("uno","pass")){
 	echo "Todo va bien";
 }*/
 
+function validar($usuario, $pass){
+	$cnn = new conexion();
+
+		$con = $cnn->conectar();
+
+		$usuarios = new usuarios();
+
+		$usuarios->usuario = $usuario;
+		$usuarios->contrasena = $pass;
+
+		mysqli_select_db($con, "loginBootstrap");
+
+		$sql = "SELECT * FROM usuarios WHERE usuario='".$usuarios->usuario."' and contrasena='".$usuarios->contrasena."'";
+
+		$consulta = mysqli_query($con, $sql);
+		
+		$fila = mysqli_fetch_array($consulta);
+
+		if($fila > 0){
+			return true;
+		}else {
+			return false;
+		}
+
+}
 
 
 ?>
