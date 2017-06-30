@@ -25,16 +25,16 @@ class usuariosDatos{
 			return false;
 		}
 		mysqli_close($con);
-	}
-}
+	} //function insertarUsuarios
+
 
 /*$obj = new usuariosDatos();
 if($obj->insertarUsuarios("uno","pass")){
 	echo "Todo va bien";
 }*/
 
-function validar($usuario, $pass){
-	$cnn = new conexion();
+	function validar($usuario, $pass){
+		$cnn = new conexion();
 
 		$con = $cnn->conectar();
 
@@ -57,7 +57,8 @@ function validar($usuario, $pass){
 			return false;
 		}
 
-}
+	}//function validar
 
+}//Class
 
 ?>

@@ -22,6 +22,8 @@
 		<input type="button" value="registrar"id="btnregistrar" />
 	<!-- </form> -->
 	</div>	
-	<div id="resultado"></div>
+	<div id="resultado">
+		
+	</div>
 </body>
 </html>
